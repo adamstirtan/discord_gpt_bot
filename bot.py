@@ -35,7 +35,6 @@ async def on_message(message):
             frequency_penalty = 0.0,
             presence_penalty = 0.0
         )
-
-    await message.channel.send(response.choices[0].text)
+        await message.channel.send(response.choices[0].text)
 
 client.run(token)
